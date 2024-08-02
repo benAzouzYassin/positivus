@@ -1,6 +1,7 @@
 import CaseStudies from "./components/ui/CaseStudies";
+import Contact from "./components/ui/Contact";
+import Footer from "./components/ui/Footer";
 import Hero from "./components/ui/Hero";
-import LetsMakeThings from "./components/ui/LetsMakeThings";
 import Nav from "./components/ui/nav";
 import Partners from "./components/ui/partners";
 import Services from "./components/ui/Services";
@@ -14,10 +15,12 @@ export default function App() {
       <Hero />
       <Partners />
       <Services />
-      <LetsMakeThings />
+      {/* <LetsMakeThings /> */}
       <CaseStudies />
       <WorkingProcess />
       <Testimonials />
+      <Contact />
+      <Footer />
     </>
   );
 }

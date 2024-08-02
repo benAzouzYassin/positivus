@@ -80,8 +80,8 @@ export default function WorkingProcess() {
                 </span>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="min-h-10">
-              Yes. It adheres to the WAI-ARIA design pattern.
+            <AccordionContent className="min-h-10 font-medium text-lg">
+              {item.content}
             </AccordionContent>
           </AccordionItem>
         ))}

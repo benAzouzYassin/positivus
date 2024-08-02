@@ -31,7 +31,7 @@ export default function HeroSvg() {
         </g>
       </motion.g>
       {/* thin circles */}
-      <g className={" delayed-bounce"}>
+      <g>
         <path
           d="M565.117 389.333C563.218 392.777 559.679 395.268 554.584 396.813C549.486 398.359 542.874 398.943 534.913 398.6C518.992 397.913 497.791 393.524 472.776 385.868C422.756 370.558 357.594 342.216 289.155 304.465C220.715 266.715 161.982 226.717 122.349 192.575C102.53 175.501 87.5079 159.909 78.4343 146.81C73.8969 140.259 70.8635 134.355 69.4517 129.218C68.0405 124.084 68.2602 119.762 70.1597 116.319C72.0593 112.875 75.5976 110.384 80.693 108.839C85.7907 107.293 92.4028 106.709 100.364 107.052C116.285 107.739 137.486 112.128 162.501 119.784C212.521 135.094 277.683 163.436 346.122 201.187C414.562 238.937 473.295 278.934 512.928 313.077C532.747 330.15 547.769 345.742 556.843 358.842C561.38 365.393 564.414 371.297 565.825 376.434C567.237 381.568 567.017 385.889 565.117 389.333Z"
           stroke="black"
@@ -45,28 +45,11 @@ export default function HeroSvg() {
           stroke="black"
         />
       </g>
-      <circle
-        className={"bounce"}
-        cx="132.037"
-        cy="104.5"
-        r="15.5"
-        fill="#B9FF66"
-      />
-      <circle
-        className={"bounce"}
-        cx="421.537"
-        cy="435"
-        r="10"
-        fill="#B9FF66"
-      />
-      <circle
-        className={"bounce"}
-        cx="82.0371"
-        cy="64.5"
-        r="23.5"
-        fill="black"
-      />
+      <circle cx="132.037" cy="104.5" r="15.5" fill="#B9FF66" />
+      <circle cx="421.537" cy="435" r="10" fill="#B9FF66" />
+      <circle cx="82.0371" cy="64.5" r="23.5" fill="black" />
       <motion.g
+        className={" delayed-bounce"}
         initial={{
           opacity: 0,
           y: -200,
@@ -248,9 +231,3 @@ export default function HeroSvg() {
     </svg>
   );
 }
-
-//TODO el bouq yatla3 el fouq
-//TODO baad el dwer mt3 el boq tatl3 3la jnab
-//TODO  el 4 eli 3al eymin yjiw ml fou9 issar
-//TODO el stars li ml louta yodhrou
-//TODO dwer ytl3ou
