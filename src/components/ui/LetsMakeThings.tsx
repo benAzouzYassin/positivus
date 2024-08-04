@@ -1,4 +1,3 @@
-import LetsMakeThingsSvg from "../svg/LetsMakeThingsSvg";
 import { Button } from "./button";
 
 export default function LetsMakeThings() {
@@ -15,7 +14,7 @@ export default function LetsMakeThings() {
         <Button className="px-7 mt-4 rounded-lg h-[55px]">
           Book a consultation
         </Button>
-        <LetsMakeThingsSvg className="absolute top-0 right-20" />
+        {/* <LetsMakeThingsSvg className="absolute top-0 right-20" /> */}
       </div>
     </section>
   );
