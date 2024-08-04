@@ -2,12 +2,12 @@ import { Button } from "./button";
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-[100px]">
+    <section id="contact" className="lg:px-[100px] px-4 md:px-[40px]">
       <p className="bg-[#B9FF66] rounded-xl text-4xl font-black mb-4 py-2 w-fit px-4 ">
         Contact Us{" "}
       </p>
-      <div className="min-h-[500px] flex   flex-row p-[60px] w-full rounded-[42px] bg-[#F3F3F3] shadow-md">
-        <div className="w-1/2">
+      <div className="min-h-[500px] flex   flex-row p-5 md:p-[60px] w-full rounded-xl md:rounded-[42px] bg-[#F3F3F3] shadow-md">
+        <div className="md:w-1/2 w-full">
           <div className="w-full text-lg flex flex-col">
             <label htmlFor="name" className="text-xl font-medium ">
               Name
@@ -46,7 +46,7 @@ export default function Contact() {
             Send Message
           </Button>
         </div>
-        <div className="w-1/2 flex items-center justify-end pl-7 relative">
+        <div className="w-1/2  items-center hidden md:flex justify-end pl-7 relative">
           <img alt="" src="/contactSection.svg" />
         </div>
       </div>

@@ -18,9 +18,9 @@ export default function App() {
       {/* <LetsMakeThings /> */}
       <CaseStudies />
       <WorkingProcess />
-      {/* <Testimonials /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Testimonials />
+      <Contact />
+      <Footer />
     </>
   );
 }
