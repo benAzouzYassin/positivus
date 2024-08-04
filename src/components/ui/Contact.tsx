@@ -2,7 +2,7 @@ import { Button } from "./button";
 
 export default function Contact() {
   return (
-    <section className="px-[100px]">
+    <section id="contact" className="px-[100px]">
       <p className="bg-[#B9FF66] rounded-xl text-4xl font-black mb-4 py-2 w-fit px-4 ">
         Contact Us{" "}
       </p>

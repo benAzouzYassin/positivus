@@ -6,21 +6,31 @@ import HeroSvg from "./HeroSvg";
 export default function Hero() {
   const buttonAnimation = useAnimation();
   return (
-    <section className="flex  mt-16 px-[100px] ">
-      <div className="w-1/2 min-h-[500px] ">
-        <BoxReveal boxColor="black">
-          <p className="text-[60px] max-w-[600px] font-bold">Navigating the</p>
-        </BoxReveal>
-        <BoxReveal delay={0.2} boxColor="black">
-          <p className="text-[60px] max-w-[600px] font-bold">
-            digital landscape
-          </p>
-        </BoxReveal>
-        <BoxReveal delay={0.4} boxColor="black">
-          <p className="text-[60px] max-w-[600px] font-bold">for success</p>
-        </BoxReveal>
+    <section className="flex md:flex-row  flex-col lg:mt-16  xl:px-[100px] px-4 md:px-[40px] ">
+      <div className="md:w-1/2 w-full  min-h-[500px] ">
+        <div className=" w-full mt-20 lg:block hidden lg:mt-0 ">
+          <BoxReveal boxColor="black">
+            <p className="lg:text-[60px]   lg:max-w-[600px] font-bold">
+              Navigating the
+            </p>
+          </BoxReveal>
+          <BoxReveal delay={0.2} boxColor="black">
+            <p className="lg:text-[60px]  pt-1  lg:max-w-[600px] font-bold">
+              digital landscape
+            </p>
+          </BoxReveal>
+          <BoxReveal delay={0.4} boxColor="black">
+            <p className="lg:text-[60px]  pt-1  lg:max-w-[600px] font-bold">
+              for success
+            </p>
+          </BoxReveal>
+        </div>
+        <p className="md:text-[55px] text-[40px]  lg:hidden mt-0 md:mt-6 font-bold text-center md:text-left">
+          Navigating the digital landscape for success
+        </p>
+        <HeroSvg className="w-[90vw] md:hidden h-[300px] mt-0 " />
 
-        <p className="text-[20px] mt-2">
+        <p className="md:text-[20px] md:mt-2 md w-full">
           Our digital marketing agency helps businesses grow and succeed online
           through a range of services including SEO, PPC, social media
           marketing, and content creation.
@@ -36,7 +46,7 @@ export default function Hero() {
               height: 0,
             })
           }
-          className="relative overflow-hidden   group  mt-4  hover:bg-black hover:text-white transition-all group text-[16px]  rounded-lg h-[60px] w-[230px]"
+          className="relative overflow-hidden   group  mt-4  hover:bg-black hover:text-white transition-all group text-[16px]  rounded-lg h-[60px] w-full md:w-[230px]"
         >
           <span className="z-50 group-hover:text-black transition-all ease-in-out ">
             Book a consultation
@@ -45,7 +55,7 @@ export default function Hero() {
         </Button>
       </div>
       <div className=" flex  items-center justify-center w-1/2">
-        <HeroSvg />
+        <HeroSvg className="hidden md:block" />
       </div>
     </section>
   );

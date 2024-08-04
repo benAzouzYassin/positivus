@@ -10,20 +10,21 @@ export default function Footer() {
           <Logo color="white" />
           <ul className="ml-auto text-[20px] items-center flex gap-8">
             <li className="underline-offset-[6px] opacity-80 hover:opacity-100 underline">
-              About us
+              <a href="#about">About us</a>
             </li>
             <li className="underline-offset-[6px] opacity-80 hover:opacity-100 underline">
-              Services
+              <a href="#services">Services</a>
             </li>
             <li className="underline-offset-[6px] opacity-80 hover:opacity-100 underline">
-              Use Cases
+              <a href="#case-studies">Cases</a>
             </li>
             <li className="underline-offset-[6px] opacity-80 hover:opacity-100 underline">
-              Pricing
+              <a href="#our-process">Our process</a>
             </li>
             <li className="underline-offset-[6px] opacity-80 hover:opacity-100 underline">
-              Blog
+              <a href="#testimonials">Testimonials</a>
             </li>
+
             <li className="underline-offset-[6px] opacity-80 hover:opacity-100 underline"></li>
           </ul>
         </div>

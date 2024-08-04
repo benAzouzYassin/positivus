@@ -9,7 +9,7 @@ import { useRef } from "react";
 
 export default function Testimonials() {
   return (
-    <motion.section className="px-[100px] my-20">
+    <motion.section id="testimonials" className="px-[100px] my-20">
       <p className="bg-[#B9FF66] rounded-xl text-4xl font-black mb-4 py-2 w-fit px-4 ">
         Testimonials{" "}
       </p>

@@ -22,34 +22,48 @@ export default function Nav() {
     <nav className={cn("pt-[40px]  flex items-center transition-all", {})}>
       <div
         className={cn(
-          "w-full flex transition-all  items-center  px-[100px] left-0 bg-white z-50",
+          "w-full flex transition-all  items-center md:px-[40px] px-4 xl:px-[100px] left-0 bg-white z-50",
           {
-            "top-0 fixed px-[90px] border-b shadow-md h-[100px] w-full transition-all  ":
+            "top-0 md:fixed md:px-[90px] border-b shadow-md h-[100px] w-full transition-all  ":
               isScrolled,
           }
         )}
       >
-        <Logo />
-        <ul className="ml-auto text-[20px] items-center flex gap-6">
-          <li className="group hover:cursor-pointer ">
+        <Logo className="scale-[80%] -translate-x-5 -translate-y-5 md:scale-100" />
+        <ul className="ml-auto hidden  text-[20px] items-center lg:flex gap-6">
+          {/* <li className="group hover:cursor-pointer ">
             <span>About</span>
             <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+          </li> */}
+          <li className="group hover:cursor-pointer active:scale-95 transition-transform">
+            <a href="#services">
+              Services
+              <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+            </a>
           </li>
           <li className="group hover:cursor-pointer active:scale-95 transition-transform">
-            Services
-            <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+            <a href="#case-studies">
+              Cases
+              <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+            </a>
           </li>
           <li className="group hover:cursor-pointer active:scale-95 transition-transform">
-            Our process
-            <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+            <a href="#our-process">
+              Our process
+              <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+            </a>
           </li>
           <li className="group hover:cursor-pointer active:scale-95 transition-transform">
-            Testimonials
-            <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+            <a href="#testimonials">
+              Testimonials
+              <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+            </a>
           </li>
           <li className="group hover:cursor-pointer active:scale-95 transition-transform">
-            Contact
-            <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+            <a href="#contact">
+              Contact
+              <div className="w-0 group-hover:w-3/4  transition-all h-[2px]  bg-black/70"></div>
+            </a>
           </li>
           <li>
             <Button

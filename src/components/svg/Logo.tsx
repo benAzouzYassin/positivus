@@ -1,7 +1,8 @@
+import { cn } from "@/lib/utils";
 import { HTMLAttributes } from "react";
 
 type Props = {} & HTMLAttributes<SVGElement>;
-export default function Logo(props: Props) {
+export default function Logo({ className, ...props }: Props) {
   return (
     <svg
       {...props}
@@ -10,7 +11,7 @@ export default function Logo(props: Props) {
       viewBox="0 0 220 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="group "
+      className={cn("group ", className)}
     >
       <g clipPath="url(#clip0_330_1194)">
         <path

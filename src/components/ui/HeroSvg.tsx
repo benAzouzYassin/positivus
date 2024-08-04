@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-export default function HeroSvg() {
+
+export default function HeroSvg({ className }: { className?: string }) {
   return (
     <svg
+      className={className}
       width="601"
       height="515"
       viewBox="0 0 601 515"

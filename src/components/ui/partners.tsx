@@ -11,7 +11,7 @@ export default function Partners() {
   ];
 
   return (
-    <div className="px-[100px]">
+    <div className="lg:px-[100px] px-0 md:px-[40px]">
       <div className="w-full  partners-gradient  relative mt-10    h-28 justify-center gap-4 overflow-hidden  items-center ">
         <Marquee className="[--duration:20s] ">
           {partnersImages.map((img) => (

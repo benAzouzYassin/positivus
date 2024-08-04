@@ -37,7 +37,7 @@ export default function WorkingProcess() {
   ];
   const [activeItem, setActiveItem] = useState<string>();
   return (
-    <section className="px-[100px]">
+    <section id="our-process" className="lg:px-[100px] md:px-[40px] px-4">
       <p className="bg-[#B9FF66] rounded-xl text-4xl font-black mb-4 py-2 w-fit px-4 ">
         Our Working Process
       </p>
@@ -46,7 +46,7 @@ export default function WorkingProcess() {
         {items.map((item, i) => (
           <AccordionItem
             className={cn(
-              "  mb-4 flex flex-col transition-all   justify-center px-10 min-h-[100px] rounded-[16px] border-x-2    border-t-2 border-b-[7px] border-black/70  ",
+              "  mb-4 flex flex-col transition-all   justify-center px-4 md:px-10 min-h-[100px] rounded-[16px] border-x-2    border-t-2 border-b-[7px] border-black/70  ",
               {
                 "bg-[#B9FF66] border-black/90": activeItem === item.title,
               }
@@ -56,11 +56,11 @@ export default function WorkingProcess() {
           >
             <AccordionTrigger asChild>
               <div className=" group flex text-2xl hover:cursor-pointer font-medium  items-center  w-full">
-                <span className="text-3xl mr-2 font-bold">
+                <span className="mr-2 font-bold">
                   {" "}
                   {(i + 1).toString().padStart(2, "0")}
                 </span>
-                <span className="group-hover:border-opacity-100 transition-all border-black border-b-2 border-opacity-0">
+                <span className="group-hover:border-opacity-100 text-[18px] font-bold line-clamp-1 md:line-clamp-none md:font-medium  md:text-3xl transition-all border-black border-b-2 border-opacity-0">
                   {item.title}
                 </span>
                 <span
