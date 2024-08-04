@@ -24,12 +24,17 @@ export default function Nav() {
         className={cn(
           "w-full flex transition-all  items-center md:px-[40px] px-4 xl:px-[100px] left-0 bg-white z-50",
           {
-            "top-0 md:fixed md:px-[90px] border-b shadow-md h-[100px] w-full transition-all  ":
+            "top-0 md:fixed md:px-[90px] border-b shadow-md h-[100px]  w-full transition-all  ":
               isScrolled,
           }
         )}
       >
-        <Logo className="scale-[90%] -translate-x-2 -translate-y-5 md:scale-100" />
+        <Logo
+          className={cn(
+            "scale-[90%] -translate-x-2 -translate-y-5 md:scale-100",
+            { "translate-y-0": isScrolled }
+          )}
+        />
         <ul className="ml-auto hidden  text-[20px] items-center lg:flex gap-6">
           {/* <li className="group hover:cursor-pointer ">
             <span>About</span>
@@ -76,11 +81,10 @@ export default function Nav() {
           </li>
         </ul>
         <Button
-          className="border-black/50 scale-75 sm:scale-100 sm:translate-x-0 translate-x-6 md:hidden ml-auto -mt-8 border-4 hover:bg-black/80 hover:border-black/10 hover:text-white transition-all group text-[16px] border-l-2 border-t-2  rounded-lg h-[55px]  px-5"
+          className="border-black/50 scale-75 sm:scale-100 sm:translate-x-0 translate-x-6 md:hidden ml-auto -mt-8 border-4 hover:bg-black/80 active:scale-[70%] hover:border-black/10 hover:text-white transition-all group text-[16px] border-l-2 border-t-2  rounded-lg h-[55px]  px-5"
           variant={"outline"}
         >
           Request a quote
-          <ArrowRight className="w-0 transition-all ml-[2px] duration-150 text-white group-hover:w-7 stroke-[2]" />
         </Button>
       </div>
     </nav>

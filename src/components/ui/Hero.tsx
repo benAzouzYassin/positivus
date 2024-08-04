@@ -51,7 +51,7 @@ export default function Hero() {
           <span className="z-50 group-hover:text-black transition-all ease-in-out ">
             Book a consultation
           </span>
-          <div className=" h-0  group-hover:h-[60px] group-hover:border-black group-hover:rounded-b-lg border-2 opacity-0 group-hover:opacity-100  rounded-t-lg absolute top-0 transition-all duration-300 border-white   w-[230px] bg-white flex  items-center justify-center   "></div>
+          <div className=" h-0  group-hover:h-[60px] group-hover:border-black group-hover:rounded-b-lg border-2 opacity-0 group-hover:opacity-100  rounded-t-lg absolute top-0 w-full transition-all duration-300 border-white   md:w-[230px] bg-white flex  items-center justify-center   "></div>
         </Button>
       </div>
       <div className=" flex  items-center justify-center w-1/2">
