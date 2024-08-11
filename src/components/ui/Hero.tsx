@@ -6,7 +6,10 @@ import HeroSvg from "./HeroSvg";
 export default function Hero() {
   const buttonAnimation = useAnimation();
   return (
-    <section className="flex md:flex-row  flex-col lg:mt-16  xl:px-[100px] px-4 md:px-[40px] ">
+    <section
+      id="about"
+      className="flex md:flex-row  flex-col lg:mt-16  xl:px-[100px] px-4 md:px-[40px] "
+    >
       <div className="md:w-1/2 w-full  min-h-[500px] ">
         <div className=" w-full mt-20 lg:block hidden lg:mt-0 ">
           <BoxReveal boxColor="black">
